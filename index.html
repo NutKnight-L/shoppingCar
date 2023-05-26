@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次作业</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="products">
+        <div class="item">
+            <img src="./img/1.png" alt="1">
+            <ul>
+                <li>夏祭游鱼</li>
+                <li>ID:10000</li>
+                <li>￥120</li>
+                <li>库存:432</li>
+                <li><input type="button" value="-" class="minus"><span>1</span><input type="button" value="+" class="plus"><input type="button" value="add" onclick="addItem(0)"></li>
+            </ul>
+        </div>
+        <div class="item">
+            <img src="./img/2.png" alt="2">
+            <ul>
+                <li>水煮黑背鲈</li>
+                <li>ID:10001</li>
+                <li>￥80</li>
+                <li>库存:232</li>
+                <li><input type="button" value="-" class="minus"><span>1</span><input type="button" value="+" class="plus"><input type="button" value="add" onclick="addItem(1)"></li>
+            </ul>
+        </div>
+        <div class="item">
+            <img src="./img/3.png" alt="3">
+            <ul>
+                <li>蒙德土豆饼</li>
+                <li>ID:10002</li>
+                <li>￥30</li>
+                <li>库存:132</li>
+                <li><input type="button" value="-" class="minus"><span>1</span><input type="button" value="+" class="plus"><input type="button" value="add" onclick="addItem(2)"></li>
+            </ul>
+        </div>
+        <div class="item">
+            <img src="./img/4.png" alt="4">
+            <ul>
+                <li>三彩团子</li>
+                <li>ID:10003</li>
+                <li>￥40</li>
+                <li>库存:932</li>
+                <li><input type="button" value="-" class="minus"><span>1</span><input type="button" value="+" class="plus"><input type="button" value="add" onclick="addItem(3)"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="paymentCar">
+        <table width="100%" id="paymentTable">
+            <tr style="font-size: 18px;font-weight: bold;">
+                <td><input type="checkbox" id="isAllCheckBox" onclick="isAllCheckBoxChecked(this)"></td>
+                <td>商品</td>
+                <td>单价</td>
+                <td>数量</td>
+                <td>小计</td>
+                <td>管理</td>
+            </tr>
+        </table>
+        <table width="100%">
+            <tr>
+                <td align="right"><span>合计</span><span class="totalMoney">￥0</span></td>
+            </tr>
+        </table>
+         
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

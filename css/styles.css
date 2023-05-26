@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.products{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.item{
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgb(163, 163, 229);
+    padding: 10px;
+    float: left;
+}
+.item img{
+    width: 50%;
+}
+.item img,.item ul{
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* border: 1px solid red; */
+}
+/* .item ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+.item li{
+    width: 100%;
+    height: 20%;
+    border: 1px solid rgb(54, 152, 212);
+    background-color: rgba(230, 242, 249, 0.363);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.minus,.plus{
+    width: 15%;
+    height: 70%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.item li span{
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(194, 194, 194, 0.345);
+    color: rgb(70, 150, 221);
+    font-weight: bold;
+}
+
+.paymentCar{
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.totalMoney{
+    color: red;
+}
+#paymentTable{
+    border-collapse: collapse;
+}
+tr{
+    height: 35px;
+}
+#paymentTable tr:hover{
+    background-color: rgb(188, 228, 255);
+}
+#paymentTable td{
+    padding-left: 5px;
+}
+#paymentTable input{
+    cursor: pointer;
+}
+.delbtn{
+    border: 1px solid rgb(4, 73, 152);
+    background-color: rgb(221, 232, 249);
+    border-radius: 15px;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+}
+.delbtn:hover{
+    background-color: rgb(110, 199, 255);
+    color: rgb(2, 55, 170);
+}
